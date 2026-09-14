@@ -1706,7 +1706,7 @@ html {
     <span>♫ NOW PLAYING...</span>
 
     <button id="control-musica">
-        ❚❚
+            ▶ MÚSICA
     </button>
 
 </div>
@@ -1932,8 +1932,9 @@ html {
 </div>
 
     </main>
-<audio id="musica" loop>
-    <source src="./cancion.mp4" type="audio/mpeg">
+
+<<audio id="musica" loop playsinline preload="auto">
+    <source src="./cancion2.mpeg" type="audio/mpeg">
 </audio>
 
     <!-- =========================
@@ -1950,40 +1951,64 @@ html {
 
         const controlMusica = document.getElementById("control-musica");
 
-        boton.addEventListener("click", function() {
-            controlMusica.addEventListener("click", function() {
+    boton.addEventListener("click", function() {
+
+    crearConfeti();
+
+    musica.play().catch(function(error) {
+        console.log("La música no pudo iniciar:", error);
+    });
+
+    entrada.style.opacity = "0";
+
+    setTimeout(function() {
+        entrada.style.display = "none";
+    }, 1000);
+
+});
+
+
+   boton.addEventListener("click", function() {
+
+    crearConfeti();
+
+    musica.play().catch(function(error) {
+        console.log("La música no pudo iniciar:", error);
+    });
+
+    entrada.style.opacity = "0";
+
+    setTimeout(function() {
+        entrada.style.display = "none";
+    }, 1000);
+
+});
+
+controlMusica.addEventListener("click", function() {
 
     if (musica.paused) {
 
-        musica.play();
+        musica.play().then(function() {
 
-        controlMusica.textContent = "❚❚";
+            controlMusica.textContent = "❚❚ PAUSA";
+
+        }).catch(function(error) {
+
+            console.log("No se pudo reproducir la música:", error);
+
+            controlMusica.textContent = "▶ MÚSICA";
+
+        });
 
     } else {
 
         musica.pause();
 
-        controlMusica.textContent = "▶";
+        controlMusica.textContent = "▶ MÚSICA";
 
     }
 
 });
-
-            crearConfeti();
-
-            musica.play();
-
-            entrada.style.opacity = "0";
-
-
-            setTimeout(function() {
-
-                entrada.style.display = "none";
-
-            }, 1000);
-
-        });
-
 
         function crearConfeti() {
 

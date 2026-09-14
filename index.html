@@ -1,0 +1,2057 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My 21st Birthday 💿</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800;900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+
+
+    <style>
+        @media (max-width: 600px) {
+    
+            .sticker-mariposa {
+    width: 65px;
+    top: 22%;
+    left: -10px;
+}
+
+.frase-y2k {
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+.loading-y2k {
+    width: 85%;
+    margin: 8px auto 15px;
+}
+
+.loading-contenido {
+    font-size: 9px;
+    font-family: "Press Start 2P", monospace;
+font-size: 9px;
+line-height: 1.6;
+}
+
+.mini1 {
+    top: 55px;
+    left: 25px;
+}
+
+.mini2 {
+    top: 90px;
+    right: 22px;
+}
+
+.mini3 {
+    top: 140px;
+    left: 35px;
+}
+
+.sticker-corazon {
+    width: 125px;
+    top: 25%;
+    right: 2px;
+    transform: rotate(8deg);
+}
+
+.sticker-cd {
+    width: 55px;
+    bottom: 12%;
+    left: -8px;
+}
+
+ .sticker-mariposa {
+    animation: flotarSticker 5s infinite ease-in-out;
+}
+
+.sticker-corazon {
+    animation: flotarCorazonSticker 6s infinite ease-in-out;
+}
+
+    body {
+        overflow-x: hidden;
+    }
+
+
+    #entrada {
+        padding: 10px;
+        align-items: flex-start;
+    }
+
+    .boton-windows,
+#entrar {
+    font-family: "Press Start 2P", monospace;
+    font-weight: normal;
+}
+
+
+    .entrada-contenido {
+
+        width: 95%;
+
+        max-width: 100%;
+        height: auto;
+    min-height: auto;
+
+        padding: 18px 18px 20px;
+
+        box-shadow:
+            5px 5px 0 #DA1B61,
+            0 0 20px rgba(218, 27, 97, 0.45);
+    }
+
+.entrada-contenido {
+    height: auto;
+    min-height: auto;
+    padding: 25px 18px;
+}
+
+    .entrada-contenido h1 {
+
+    font-family: "Audiowide", sans-serif;
+    font-weight: 900;
+
+    font-size: 48px;
+    line-height: 1.05;
+    letter-spacing: 2px;
+
+    margin: 22px auto;
+
+    background: linear-gradient(
+    180deg,
+    #FFFFFF 0%,
+    #F8B9CE 20%,
+    #FFFFFF 38%,
+    #F490B1 52%,
+    #EC417A 72%,
+    #FFFFFF 88%,
+    #DA1B61 100%
+);
+
+-webkit-background-clip: text;
+background-clip: text;
+
+-webkit-text-fill-color: transparent;
+
+
+    -webkit-text-stroke: 1px #FFFFFF;
+
+    text-shadow:
+        2px 2px 0 #F490B1,
+        4px 4px 0 #EC417A,
+        6px 6px 0 #DA1B61,
+        0 0 8px #FFFFFF,
+        0 0 18px rgba(248,185,206,0.8);
+
+    transform: skewX(-8deg);
+}
+
+.entrada-contenido h1::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: 15%;
+    left: 10%;
+
+    width: 80%;
+    height: 10px;
+
+    background: rgba(255,255,255,0.25);
+
+    border-radius: 50%;
+
+    filter: blur(5px);
+
+    pointer-events: none;
+}
+.titulo-decorado {
+        gap: 7px;
+    }
+
+    .estrella-texto {
+        width: 22px;
+    }
+
+}
+
+
+    .entrada-contenido p {
+
+        font-size: 13px;
+
+        margin: 12px 0 18px;
+
+        letter-spacing: 1px;
+    }
+
+
+    .disco {
+
+        width: 78px;
+        height: 78px;
+        margin: 0 auto 10px;
+    }
+    .contenido-info h2 {
+    font-size: 19px;
+    line-height: 1.2;
+}
+
+.dato {
+    padding: 12px 10px;
+}
+
+    #entrar {
+
+        width: 100%;
+
+        max-width: 260px;
+
+        margin: 0 auto;
+
+    padding: 10px 12px;
+    
+    font-family: "Press Start 2P", monospace;
+font-size: 11px;
+    }
+
+
+    #invitacion {
+
+        padding: 30px 8px;
+
+        justify-content: flex-start;
+    }
+
+
+    .ventana-info,
+    .ventana-outfit,
+    .ventana-ubicacion,
+    .ventana-rsvp {
+
+        width: 96%;
+
+        max-width: 96%;
+
+        margin: 22px auto;
+
+        box-shadow:
+            5px 5px 0 #DA1B61;
+    }
+.ventana-info::after,
+.ventana-outfit::after,
+.ventana-ubicacion::after,
+.ventana-rsvp::after {
+    content: "";
+    position: absolute;
+
+    top: 8px;
+    right: 12px;
+
+    width: 45px;
+    height: 12px;
+
+    background: rgba(255,255,255,0.35);
+
+    border-radius: 50%;
+
+    filter: blur(6px);
+
+    pointer-events: none;
+}
+
+    .contenido-info {
+
+        padding: 22px 15px;
+    }
+
+
+    .contenido-info h2 {
+
+        font-size: 21px;
+
+        line-height: 1.2;
+    }
+
+
+    .barra-info {
+
+        font-size: 12px;
+
+        padding: 7px 8px;
+    }
+
+
+    .botones span {
+
+        width: 19px;
+
+        height: 18px;
+
+        font-size: 11px;
+    }
+
+
+    .dato {
+
+        padding: 12px;
+
+        gap: 10px;
+    }
+
+
+    .icono {
+
+        font-size: 24px;
+    }
+
+
+    .dato p {
+
+        font-size: 14px;
+    }
+
+
+    .regla-outfit {
+
+        padding: 15px 12px;
+    }
+
+
+    .regla-outfit h3 {
+
+        font-size: 16px;
+    }
+
+
+    .regla-outfit p {
+
+        font-size: 14px;
+
+        line-height: 1.5;
+    }
+
+
+    .boton-windows {
+
+        max-width: 100%;
+
+        text-align: center;
+
+        font-size: 12px;
+
+        padding: 9px 10px;
+    }
+
+
+    .burbuja-regalo {
+
+        width: 95%;
+
+        padding: 22px 18px;
+
+        border-radius: 35px;
+    }
+
+
+    .reproductor {
+
+        width: 95%;
+
+        max-width: 280px;
+
+         position: relative;
+    z-index: 5;
+    }
+
+html {
+    scroll-behavior: smooth;
+}
+
+.contenido-info,
+.dato,
+.regla-outfit,
+.texto-ubicacion,
+.texto-rsvp,
+.burbuja-regalo,
+.entrada-contenido p {
+    font-family: "Nunito", sans-serif;
+}
+
+.contenido-info h2,
+.regla-outfit h3,
+.dato strong,
+.burbuja-titulo {
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+}
+
+.ventana-info {
+     position: relative;
+    z-index: 5;
+}
+.ventana-outfit {
+     position: relative;
+    z-index: 5;
+}
+.ventana-rsvp {
+     position: relative;
+    z-index: 5;
+}
+.ventana-ubicacion {
+     position: relative;
+    z-index: 5;
+}
+.entrada-contenido {
+     position: relative;
+    z-index: 5;
+}
+
+        /* =========================
+           ESTILOS GENERALES
+        ========================= */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+
+            margin: 0;
+
+            min-height: 100vh;
+
+            font-family: "Nunito", sans-serif;
+
+            background: linear-gradient(
+                135deg,
+                #F8B9CE,
+                #F490B1,
+                #F06090
+            );
+
+            color: white;
+
+            text-align: center;
+
+            overflow-x: hidden;
+        }
+
+
+        /* =========================
+           PANTALLA DE ENTRADA
+        ========================= */
+
+        #entrada {
+
+            position: fixed;
+
+            inset: 0;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            background: linear-gradient(
+                135deg,
+                #F8B9CE,
+                #F490B1,
+                #EC417A
+            );
+
+            z-index: 1000;
+
+            transition: opacity 1s ease;
+        }
+
+     .entrada-contenido {
+        .barra {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background: #000080;
+
+    color: white;
+
+    padding: 8px 10px;
+
+    margin: -20px -20px 25px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    border-bottom: 3px solid #7a7a7a;
+}
+
+.mini-brillo {
+
+    position: absolute;
+
+    color: #FFFFFF;
+
+    font-size: 22px;
+
+    text-shadow:
+        0 0 5px #FFFFFF,
+        0 0 12px #EC417A;
+
+    animation: parpadear 2.5s infinite ease-in-out;
+
+    pointer-events: none;
+}
+
+
+.mini1 {
+    top: 75px;
+    left: 45px;
+}
+
+
+.mini2 {
+    top: 110px;
+    right: 40px;
+}
+
+
+.mini3 {
+    top: 165px;
+    left: 65px;
+
+    color: #DA1B61;
+}
+
+.entrada-contenido {
+    position: relative;
+}
+
+.botones {
+
+    display: flex;
+
+    gap: 5px;
+}
+
+
+.botones span {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    width: 22px;
+
+    height: 20px;
+
+    background: #C0C0C0;
+
+    color: #000000;
+
+    border: 2px solid;
+
+    border-top-color: #FFFFFF;
+    border-left-color: #FFFFFF;
+
+    border-right-color: #404040;
+    border-bottom-color: #404040;
+
+    font-weight: bold;
+
+    font-size: 13px;
+}
+
+    width: 90%;
+    max-width: 520px;
+
+    padding: 20px 20px 35px;
+
+    background: #F8B9CE;
+
+    border: 3px solid #DA1B61;
+
+    border-radius: 8px;
+
+    box-shadow:
+        8px 8px 0 #DA1B61,
+        0 0 25px rgba(218, 27, 97, 0.5);
+
+    position: relative;
+}
+
+.ventana-ubicacion {
+    width: 90%;
+    max-width: 600px;
+
+    margin: 35px auto;
+
+    background: #F8B9CE;
+
+    border: 3px solid #DA1B61;
+
+    box-shadow:
+        8px 8px 0 #DA1B61;
+
+    position: relative;
+    z-index: 5;
+
+    box-sizing: border-box;
+}
+
+
+.ventana-ubicacion .contenido-info {
+    width: 100%;
+
+    padding: 30px 25px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    background: #F8B9CE;
+}
+
+
+.ventana-ubicacion .texto-ubicacion {
+    color: #000000;
+
+    font-family: "Nunito", sans-serif;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+
+    margin: 20px auto 25px;
+
+    max-width: 450px;
+}
+
+
+.texto-ubicacion {
+
+     color: #000000;
+
+    font-size: 16px;
+
+    line-height: 1.5;
+
+    margin-bottom: 25px;
+}
+
+.ventana-ubicacion {
+    width: 90%;
+    max-width: 600px;
+
+    margin: 35px auto;
+
+    border: 3px solid #DA1B61;
+
+    box-shadow:
+        8px 8px 0 #DA1B61;
+
+    position: relative;
+
+    z-index: 10;
+
+    box-sizing: border-box;
+}
+
+
+.caja-ubicacion {
+
+    width: 100%;
+
+    padding: 35px 25px;
+
+    box-sizing: border-box;
+
+    background: #F8B9CE;
+
+    text-align: center;
+
+    color: #000000;
+}
+
+
+.caja-ubicacion h2 {
+
+    margin: 0 0 25px;
+
+    font-family: "Nunito", sans-serif;
+
+    font-size: 26px;
+
+    font-weight: 800;
+
+    color: #EC417A;
+
+    text-shadow:
+        2px 2px 0 #FFFFFF,
+        4px 4px 0 #F490B1;
+}
+
+
+.caja-ubicacion p {
+
+    max-width: 450px;
+
+    margin: 0 auto 25px;
+
+    font-family: "Nunito", sans-serif;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+
+    color: #000000;
+}
+
+        .disco {
+
+            width: 130px;
+            height: 130px;
+            margin: 0 auto 15px;
+            animation: girar 4s linear infinite;
+        }
+        .disco img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    
+
+        .entrada-contenido p {
+
+            font-size: 18px;
+
+            letter-spacing: 3px;
+
+            margin: 20px 0 30px;
+        }
+
+        .ventana-outfit {
+
+    width: 90%;
+
+    max-width: 600px;
+
+    margin: 35px auto;
+
+    background: #F8B9CE;
+
+    border: 3px solid #DA1B61;
+
+    box-shadow:
+        8px 8px 0 #DA1B61;
+}
+
+
+.regla-outfit {
+
+    margin-bottom: 25px;
+
+    padding: 18px;
+
+    background: rgba(255,255,255,0.45);
+
+    border: 2px solid #FFFFFF;
+}
+
+
+.regla-outfit h3 {
+
+    margin-top: 0;
+
+    margin-bottom: 10px;
+
+    color: #DA1B61;
+
+    font-size: 17px;
+}
+
+
+.regla-outfit p {
+
+    margin: 0;
+
+    color: #000000;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+        .ventana-rsvp {
+
+    width: 90%;
+
+    max-width: 600px;
+
+    margin: 35px auto;
+
+    background: #F8B9CE;
+
+    border: 3px solid #DA1B61;
+
+    box-shadow:
+        8px 8px 0 #DA1B61;
+}
+
+
+.texto-rsvp {
+
+    color: #000000;
+
+    font-size: 16px;
+
+    line-height: 1.5;
+
+    margin-bottom: 25px;
+}
+
+.frase-y2k {
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    color: #FFFFFF;
+
+    margin: 20px 0;
+
+    text-shadow:
+        1px 1px 0 #F490B1,
+        2px 2px 0 #EC417A;
+}
+
+
+        /* =========================
+           BOTÓN ENTER
+        ========================= */
+
+       #entrar {
+
+    padding: 10px 22px;
+
+    background: #C0C0C0;
+
+    color: #000000;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    border: 2px solid;
+
+    border-top-color: #FFFFFF;
+    border-left-color: #FFFFFF;
+
+    border-right-color: #404040;
+    border-bottom-color: #404040;
+
+    box-shadow:
+        1px 1px 0 #000000;
+
+    border-radius: 2px;
+
+    transition: none;
+}
+
+        #entrar:hover {
+
+            transform: scale(1.1);
+
+        }
+
+
+        /* =========================
+           INVITACIÓN
+        ========================= */
+
+        #invitacion {
+
+            #invitacion {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 60px 20px;
+
+}
+
+        }
+
+        .fecha {
+
+            font-size: 27px;
+
+            margin-top: 35px;
+
+            font-weight: bold;
+
+            color: #DA1B61;
+        }
+
+
+        .hora {
+
+            font-size: 20px;
+
+            margin-top: 10px;
+        }
+        .ventana-info {
+
+    width: 90%;
+    max-width: 600px;
+
+    margin: 30px auto;
+
+    background: #F8B9CE;
+
+    border: 3px solid #DA1B61;
+
+    box-shadow:
+        8px 8px 0 #DA1B61;
+}
+
+
+.barra-info {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background: #000080;
+
+    color: white;
+
+    padding: 8px 10px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+.contenido-info {
+
+    padding: 30px 25px;
+
+    color: #DA1B61;
+}
+
+
+.contenido-info h2 {
+
+    margin-top: 0;
+
+    margin-bottom: 30px;
+
+    font-size: 25px;
+
+    text-shadow:
+        2px 2px 0 #FFFFFF;
+}
+
+
+.dato {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+
+    padding: 15px;
+
+    background: rgba(255,255,255,0.45);
+
+    border: 2px solid white;
+}
+
+
+.icono {
+
+    font-size: 30px;
+}
+
+
+.dato strong {
+
+    font-size: 15px;
+}
+
+
+.dato p {
+
+    margin: 5px 0 12px;
+
+    color: #000000;
+
+    font-size: 15px;
+}
+
+
+.boton-windows {
+
+    display: block;
+
+    width: fit-content;
+
+    margin: 20px auto 0;
+
+    padding: 9px 14px;
+
+    background: #C0C0C0;
+
+    color: #000000;
+
+    text-decoration: none;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    border: 2px solid;
+
+    border-top-color: #FFFFFF;
+
+    border-left-color: #FFFFFF;
+
+    border-right-color: #404040;
+
+    border-bottom-color: #404040;
+
+    box-shadow:
+        1px 1px 0 #000000;
+    font-family: "Press Start 2P", monospace;
+}
+
+.reproductor {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 90%;
+    max-width: 300px;
+
+    margin: 20px auto 35px;
+
+    padding: 8px 10px;
+
+    background: #C0C0C0;
+
+    color: #000000;
+
+    border: 2px solid;
+
+    border-top-color: #FFFFFF;
+    border-left-color: #FFFFFF;
+
+    border-right-color: #404040;
+    border-bottom-color: #404040;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+#control-musica {
+
+    background: #C0C0C0;
+
+    border: 2px solid;
+
+    border-top-color: #FFFFFF;
+    border-left-color: #FFFFFF;
+
+    border-right-color: #404040;
+    border-bottom-color: #404040;
+
+    cursor: pointer;
+}
+.burbuja-regalo {
+
+    width: 85%;
+    max-width: 420px;
+
+    margin: 45px auto;
+
+    padding: 25px 30px;
+
+    background: rgba(255, 255, 255, 0.35);
+
+    border: 2px solid #FFFFFF;
+
+    border-radius: 50px;
+
+    color: #000000;
+
+    text-align: center;
+
+    box-shadow:
+        0 0 15px rgba(255,255,255,0.7),
+        inset 0 0 15px rgba(255,255,255,0.5);
+}
+
+
+.burbuja-titulo {
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #DA1B61;
+
+    font-weight: bold;
+
+    font-size: 16px;
+}
+
+
+.burbuja-regalo p {
+
+    margin: 0;
+
+    line-height: 1.5;
+
+    font-size: 14px;
+}
+
+.titulo-dresscode {
+    color: #EC417A;
+
+    text-shadow:
+        2px 2px 0 #FFFFFF,
+        4px 4px 0 #F490B1,
+        0 0 8px rgba(255,255,255,0.7);
+}
+
+.burbuja-consumo {
+    width: 80%;
+    max-width: 500px;
+    margin: 40px auto;
+
+    padding: 28px 30px;
+
+    background: rgba(248, 185, 206, 0.95);
+
+    border: 2px solid #EC417A;
+    border-radius: 35px;
+
+    box-shadow:
+        6px 6px 0 #DA1B61,
+        inset 0 0 18px rgba(255,255,255,0.7);
+
+    text-align: center;
+    color: #000;
+
+    position: relative;
+    z-index: 10;
+}
+
+.consumo-titulo {
+    font-size: 22px;
+    font-weight: 900;
+    color: #EC417A;
+
+    margin-bottom: 14px;
+
+    text-shadow:
+        1px 1px 0 white;
+}
+
+.burbuja-consumo p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 0 12px;
+}
+
+.consumo-mini {
+    font-size: 14px;
+    font-weight: 800;
+    color: #DA1B61;
+}
+
+
+        /* =========================
+           ESTRELLAS
+        ========================= */
+
+        .estrella {
+
+            position: fixed;
+
+            font-size: 28px;
+
+            color: white;
+
+            text-shadow:
+
+                0 0 5px #EC417A,
+
+                0 0 15px #F06090;
+
+            animation: flotar 3s infinite ease-in-out;
+
+            z-index: 5;
+        }
+
+
+        .estrella1 {
+
+            top: 10%;
+
+            left: 10%;
+        }
+
+
+        .estrella2 {
+
+            top: 20%;
+
+            right: 10%;
+        }
+
+
+        .estrella3 {
+
+            bottom: 15%;
+
+            left: 15%;
+        }
+
+
+        .estrella4 {
+
+            bottom: 10%;
+
+            right: 15%;
+        }
+
+
+        /* =========================
+           CONFETI
+        ========================= */
+
+        .confeti {
+
+            position: fixed;
+
+            width: 10px;
+
+            height: 10px;
+
+            top: -20px;
+
+            z-index: 2000;
+
+            pointer-events: none;
+
+            animation: caer 3s linear forwards;
+        }
+ /* =========================
+           FONDO
+        ========================= */
+.blob {
+    position: fixed;
+    border-radius: 50%;
+    filter: blur(8px);
+    opacity: 0.45;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.blob1 {
+    width: 260px;
+    height: 260px;
+    top: 8%;
+    left: -80px;
+
+    background: radial-gradient(
+        circle,
+        #FFFFFF 0%,
+        #F8B9CE 35%,
+        #EC417A 100%
+    );
+}
+
+.blob2 {
+    width: 320px;
+    height: 320px;
+    bottom: 5%;
+    right: -100px;
+
+    background: radial-gradient(
+        circle,
+        #FFFFFF 0%,
+        #F490B1 40%,
+        #DA1B61 100%
+    );
+}
+
+.blob3 {
+    width: 180px;
+    height: 180px;
+    top: 45%;
+    right: 10%;
+
+    background: radial-gradient(
+        circle,
+        #FFFFFF 0%,
+        #F06090 40%,
+        #EC417A 100%
+    );
+}
+.sticker {
+    position: fixed;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.sticker img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.sticker-mariposa {
+    width: 120px;
+    top: 18%;
+    left: 3%;
+    transform: rotate(-12deg);
+}
+
+.sticker-corazon {
+    width: 135px;
+    top: 58%;
+    right: 3%;
+    transform: rotate(10deg);
+}
+
+.sticker-cd {
+    width: 95px;
+    bottom: 10%;
+    left: 5%;
+    transform: rotate(-8deg);
+}
+
+
+.sticker-mariposa,
+.sticker-corazon {
+    animation: flotarSticker 5s infinite ease-in-out;
+}
+
+.loading-y2k {
+
+    width: 75%;
+    max-width: 290px;
+
+    margin: 10px auto 20px;
+
+    background: #C0C0C0;
+
+    border: 2px solid;
+
+    border-top-color: #FFFFFF;
+    border-left-color: #FFFFFF;
+
+    border-right-color: #404040;
+    border-bottom-color: #404040;
+
+    box-shadow:
+        3px 3px 0 rgba(0,0,0,0.35);
+}
+
+
+.loading-barra {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 4px 6px;
+
+    background: #000080;
+
+    color: #FFFFFF;
+
+    font-size: 10px;
+
+    font-weight: bold;
+}
+
+
+.loading-botones {
+
+    display: flex;
+
+    gap: 3px;
+}
+
+
+.loading-botones span {
+
+    width: 16px;
+    height: 15px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background: #C0C0C0;
+
+    color: #000000;
+
+    border: 1px solid #FFFFFF;
+
+    font-size: 9px;
+}
+
+
+.loading-contenido {
+
+    padding: 8px;
+
+    color: #000000;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+.barra,
+.barra-info,
+.loading-barra {
+    font-family: "Press Start 2P", monospace;
+    font-size: 10px;
+    letter-spacing: 0;
+}
+
+.reproductor {
+    font-family: "Press Start 2P", monospace;
+    font-size: 9px;
+}
+.titulo-decorado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    text-align: center;
+}
+
+.estrella-texto {
+    width: 28px;
+    height: auto;
+
+    flex-shrink: 0;
+
+    filter:
+        drop-shadow(0 0 4px rgba(255,255,255,0.9))
+        drop-shadow(0 0 7px rgba(236,65,122,0.5));
+}
+
+#control-musica {
+    font-family: "Press Start 2P", monospace;
+}
+
+@keyframes flotarTelefono {
+
+    0%, 100% {
+        transform: translateY(0) rotate(-10deg);
+    }
+
+    50% {
+        transform: translateY(-8px) rotate(-5deg);
+    }
+}
+
+@keyframes flotarSticker {
+    0%, 100% {
+        transform: translateY(0) rotate(-8deg);
+    }
+
+    50% {
+        transform: translateY(-12px) rotate(8deg);
+    }
+0%, 100% {
+        transform: translateY(0) rotate(8deg);
+    }
+
+    50% {
+        transform: translateY(-12px) rotate(12deg);
+    }
+}
+
+        /* =========================
+           ANIMACIONES
+        ========================= */
+
+        @keyframes girar {
+
+            from {
+
+                transform: rotate(0deg);
+
+            }
+
+            to {
+
+                transform: rotate(360deg);
+
+            }
+
+        }
+
+
+        @keyframes flotar {
+
+            0% {
+
+                transform: translateY(0);
+
+            }
+
+            50% {
+
+                transform: translateY(-15px);
+
+            }
+
+            100% {
+
+                transform: translateY(0);
+
+            }
+
+        }
+
+
+        @keyframes caer {
+
+            0% {
+
+                transform: translateY(0) rotate(0deg);
+
+                opacity: 1;
+
+            }
+
+            100% {
+
+                transform: translateY(110vh) rotate(720deg);
+
+                opacity: 0;
+
+            }
+
+        }
+
+
+    </style>
+
+</head>
+
+
+<body>
+
+<div class="blob blob1"></div>
+<div class="blob blob2"></div>
+<div class="blob blob3"></div>
+
+<div class="sticker sticker-mariposa">
+    <img src="./mariposa.png" alt="">
+</div>
+
+<div class="sticker sticker-corazon">
+    <img src="./corazon.png" alt="">
+</div>
+
+<div class="sticker sticker-cd">
+    <img src="./cd.png" alt="">
+</div>
+
+    <!-- =========================
+         PANTALLA DE ENTRADA
+    ========================= -->
+
+    <section id="entrada">
+
+       
+
+        <div class="entrada-contenido">
+            <div class="barra">
+             <span >♡ Y2K PARTY.EXE</span> 
+             
+             <div class="botones">
+                <span>-</span>
+                <span>□</span>
+                <span>×</span>
+             </div>
+             
+            </div>
+
+ <div class="mini-brillo mini1">✦</div>
+<div class="mini-brillo mini2">✧</div>
+<div class="mini-brillo mini3">♡</div>
+
+
+
+
+            <div class="disco">
+                <img src="disco.png.png" alt="Bola Disco">
+    
+            </div>
+
+            <div class="loading-y2k">
+
+    <div class="loading-barra">
+        <span>Y2K_LOADING.EXE</span>
+
+        <div class="loading-botones">
+            <span>−</span>
+            <span>×</span>
+        </div>
+    </div>
+
+    <div class="loading-contenido">
+        ✦ LOADING BIRTHDAY MODE... ✦
+    </div>
+    
+    </div>
+
+            <h1>
+                AMY'S 21st BIRTHDAY
+            </h1>
+
+            <p class="frase-y2k titulo-decorado" >
+                 <img src="./estrellas.png" alt="" class="estrella-texto">
+                 IT'S GIVING... 2000'S
+                 <img src="./estrellas.png" alt="" class="estrella-texto">
+            </p>
+
+            <button id="entrar">
+                MÁS INFO ✦
+            </button>
+
+        </div>
+
+</div>
+
+    </section>
+
+
+    <!-- =========================
+         INVITACIÓN
+    ========================= -->
+
+    <main id="invitacion">
+
+        <div class="estrella estrella1">✦</div>
+
+        <div class="estrella estrella2">✧</div>
+
+        <div class="estrella estrella3">★</div>
+
+        <div class="estrella estrella4">✦</div>
+<div class="reproductor">
+
+    <span>♫ NOW PLAYING...</span>
+
+    <button id="control-musica">
+        ❚❚
+    </button>
+
+</div>
+        <div class="ventana-info">
+
+     <div class="barra-info">
+
+        <span>♡ AMY'S BIRTHDAY.EXE</span>
+
+        <div class="botones">
+            <span>−</span>
+            <span>□</span>
+            <span>×</span>
+        </div>
+
+    </div>
+
+
+    <div class="contenido-info">
+
+        <h2 class="titulo-decorado">
+
+            <img
+                src="./estrellas.png"
+                alt=""
+                class="estrella-texto">
+
+            ESTÁS INVITADO
+
+            <img
+                src="./estrellas.png"
+                alt=""
+                class="estrella-texto">
+
+        </h2>
+
+
+        <!-- FECHA -->
+
+        <div class="dato">
+
+            <span class="icono">📅</span>
+
+            <div>
+                <strong>FECHA</strong>
+                <p>02 DE OCTUBRE, 2026</p>
+            </div>
+
+        </div>
+
+
+        <!-- HORA -->
+
+        <div class="dato">
+
+            <span class="icono">🕘</span>
+
+            <div>
+                <strong>HORA</strong>
+                <p>9:00 PM</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+ <div class="ventana-outfit">
+   <h2 class="titulo-decorado titulo-dresscode">
+
+    <img
+        src="./estrellas.png"
+        alt=""
+        class="estrella-texto">
+
+    DRESS CODE: Y2K
+
+    <img
+        src="./estrellas.png"
+        alt=""
+        class="estrella-texto">
+
+</h2>
+
+        <div class="regla-outfit">
+
+            <h3>💿 LOOK Y2K</h3>
+
+            <p>
+                Inspírate en la moda de los 2000's para crear tu outfit.
+                ¡Quiero ver muchos looks icónicos!
+            </p>
+
+        </div>
+
+
+        <div class="regla-outfit">
+
+    <h3>COMING WITH YOUR +1? 💗</h3>
+
+    <p>
+        Si vienes con tu pareja, me encantaría verlos recreando
+        a alguna pareja icónica de las rom-com de los 2000's. ✨
+    </p>
+
+    <p>
+        Piensa en vibes de película, alfombra roja y teen movie.
+    </p>
+
+</div>
+
+
+        <a
+            href="https://pin.it/7cxrqmYbs"
+            target="_blank"
+            class="boton-windows boton-pinterest">
+
+            VER INSPO EN PINTEREST ✦
+
+        </a>
+
+    </div>
+
+</div>
+<div class="burbuja-regalo">
+
+    <span class="burbuja-titulo">
+     LITTLE GIFT NOTE
+    </span>
+
+    <p>
+        Tu presencia es mi regalo favorito, pero si quieres traerme
+        un detallito, un sobrecito siempre es bienvenido ♡
+    </p>
+
+</div>
+
+    
+<div class="ventana-ubicacion">
+
+    <div class="barra-info">
+
+        <span>UBICACIÓN.EXE</span>
+
+        <div class="botones">
+            <span>−</span>
+            <span>□</span>
+            <span>×</span>
+        </div>
+
+    </div>
+
+
+    <div class="caja-ubicacion">
+
+        <h2>¿DÓNDE SERÁ? ✦</h2>
+
+        <p>
+            La ubicación exacta de la fiesta estará disponible en Google Maps.
+        </p>
+
+        <a
+            href="https://maps.app.goo.gl/2Wn9XwwV9FCh9Cjx9?g_st=aw"
+            target="_blank"
+            class="boton-windows">
+
+            VER UBICACIÓN EN MAPS
+
+        </a>
+
+    </div>
+
+</div>
+
+<div class="ventana-rsvp">
+
+    <div class="barra-info">
+
+        <span> RSVP.EXE</span>
+
+        <div class="botones">
+            <span>−</span>
+            <span>□</span>
+            <span>×</span>
+        </div>
+
+    </div>
+
+<div class="contenido-info">
+
+        <h2>CONFIRMA TU ASISTENCIA 💗</h2>
+
+        <p class="texto-rsvp">
+            Si vas a acompañarme, únete al grupo de WhatsApp para confirmar tu asistencia y recibir cualquier actualización de la fiesta.
+        </p>
+
+        <a
+            href="https://chat.whatsapp.com/IMgw9xAe62CKkJ6IYghjsC"
+            target="_blank"
+            class="boton-windows">
+
+            UNIRME AL GRUPO DE WHATSAPP ✦
+
+        </a>
+
+    </div>
+
+</div>
+
+<div class="burbuja-consumo">
+
+    <span class="burbuja-titulo">
+    ✦ PARTY FUEL ✦
+    </span>
+
+    <p>
+        Para que la noche tenga todo lo que te gusta,
+        trae tus <strong>bebidas y snacks favoritos</strong>
+        para tu consumo. 💿♡
+    </p>
+
+</div>
+
+    </main>
+<audio id="musica" loop>
+    <source src="./cancion.mp4" type="audio/mpeg">
+</audio>
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================= -->
+
+    <script>
+
+        const boton = document.getElementById("entrar");
+
+        const entrada = document.getElementById("entrada");
+
+        const musica = document.getElementById("musica");
+
+        const controlMusica = document.getElementById("control-musica");
+
+        boton.addEventListener("click", function() {
+            controlMusica.addEventListener("click", function() {
+
+    if (musica.paused) {
+
+        musica.play();
+
+        controlMusica.textContent = "❚❚";
+
+    } else {
+
+        musica.pause();
+
+        controlMusica.textContent = "▶";
+
+    }
+
+});
+
+            crearConfeti();
+
+            musica.play();
+
+            entrada.style.opacity = "0";
+
+
+            setTimeout(function() {
+
+                entrada.style.display = "none";
+
+            }, 1000);
+
+        });
+
+
+        function crearConfeti() {
+
+            const colores = [
+
+                "#F8B9CE",
+
+                "#F490B1",
+
+                "#F06090",
+
+                "#EC417A",
+
+                "#DA1B61",
+
+                "#FFFFFF"
+
+            ];
+
+
+            for (let i = 0; i < 100; i++) {
+
+                const confeti = document.createElement("div");
+
+
+                confeti.classList.add("confeti");
+
+
+                confeti.style.left =
+                    Math.random() * 100 + "vw";
+
+
+                confeti.style.backgroundColor =
+                    colores[
+                        Math.floor(
+                            Math.random() * colores.length
+                        )
+                    ];
+
+
+                confeti.style.animationDelay =
+                    Math.random() * 1.5 + "s";
+
+
+                confeti.style.transform =
+                    "rotate(" +
+                    Math.random() * 360 +
+                    "deg)";
+
+
+                document.body.appendChild(confeti);
+
+
+                setTimeout(function() {
+
+                    confeti.remove();
+
+                }, 4000);
+
+            }
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
+
+
